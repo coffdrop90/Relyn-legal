@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Relyn Privacy Policy</title>
+<style>
+  :root {
+    --bg: #faf9fd;
+    --surface: #ffffff;
+    --surface-inset: #f3f2fa;
+    --ink: #14161f;
+    --ink-soft: #666f83;
+    --ink-faint: #9aa1b3;
+    --accent: #5e5ce6;
+    --accent-ink: #4740c9;
+    --accent-soft: #edecfb;
+    --line: #e6e5f1;
+    --good: #2f9e63;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0a0a0e;
+      --surface: #17171f;
+      --surface-inset: #1e1e29;
+      --ink: #edeef5;
+      --ink-soft: #a2a8bd;
+      --ink-faint: #6c7185;
+      --accent: #8583f2;
+      --accent-ink: #c3c2fb;
+      --accent-soft: rgba(94, 92, 230, 0.16);
+      --line: #2a2b38;
+      --good: #4cc98a;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 64px 24px 120px;
+  }
+
+  header.doc-head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 40px;
+  }
+
+  .mark {
+    width: 44px;
+    height: 44px;
+    border-radius: 13px;
+    flex: none;
+    background: linear-gradient(155deg, var(--accent) 0%, var(--accent-ink) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mark svg { width: 22px; height: 22px; }
+
+  .word {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+
+  .doc-label {
+    font-size: 13px;
+    color: var(--ink-soft);
+    font-weight: 600;
+  }
+
+  h1 {
+    font-size: clamp(32px, 5vw, 42px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.08;
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+
+  .updated {
+    font-size: 14px;
+    color: var(--ink-faint);
+    margin: 0 0 36px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .lede {
+    font-size: 17px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    margin: 0 0 32px;
+    max-width: 60ch;
+  }
+
+  .glance {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 26px 28px;
+    margin-bottom: 48px;
+  }
+
+  .glance-title {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 16px;
+  }
+
+  .glance-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 20px;
+  }
+
+  @media (max-width: 520px) {
+    .glance-grid { grid-template-columns: 1fr; }
+  }
+
+  .glance-item {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-size: 14.5px;
+    line-height: 1.5;
+    color: var(--ink);
+  }
+
+  .glance-item svg {
+    width: 17px;
+    height: 17px;
+    flex: none;
+    margin-top: 2px;
+    color: var(--good);
+  }
+
+  section {
+    margin: 0 0 40px;
+  }
+
+  section h2 {
+    font-size: 21px;
+    font-weight: 750;
+    letter-spacing: -0.01em;
+    margin: 0 0 14px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+  }
+
+  section:first-of-type h2 { border-top: none; padding-top: 0; }
+
+  section p, section li {
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    max-width: 62ch;
+  }
+
+  section p { margin: 0 0 14px; }
+
+  section ul {
+    margin: 0 0 14px;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  section li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+  }
+
+  section li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+
+  strong { color: var(--ink); font-weight: 650; }
+
+  code {
+    background: var(--surface-inset);
+    border-radius: 5px;
+    padding: 1px 6px;
+    font-size: 0.92em;
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    color: var(--ink);
+  }
+
+  .contact {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 26px 28px;
+  }
+
+  .contact p { margin: 0 0 6px; }
+  .contact a { color: var(--accent); font-weight: 600; text-decoration: none; }
+  .contact a:hover { text-decoration: underline; }
+
+  footer {
+    margin-top: 56px;
+    font-size: 13px;
+    color: var(--ink-faint);
+    border-top: 1px solid var(--line);
+    padding-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <header class="doc-head">
+    <div class="mark">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5L9.5 17L19 6.5" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div>
+      <div class="word">Relyn</div>
+      <div class="doc-label">Privacy Policy</div>
+    </div>
+  </header>
+
+  <h1>We built Relyn to hold your word &mdash; not your data.</h1>
+  <p class="updated">Effective July 24, 2026</p>
+
+  <p class="lede">
+    Relyn is a personal commitment tracker. This page explains, in plain terms,
+    what happens to your information when you use it. The short version: your
+    commitments stay on your device and in your own iCloud account. We don't
+    collect them, see them, or send them anywhere.
+  </p>
+
+  <div class="glance">
+    <p class="glance-title">At a glance</p>
+    <div class="glance-grid">
+      <div class="glance-item">
+        <svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5L7.5 14L16 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        No data is collected by us, ever
+      </div>
+      <div class="glance-item">
+        <svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5L7.5 14L16 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Relyn makes no network requests of its own
+      </div>
+      <div class="glance-item">
+        <svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5L7.5 14L16 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Syncing uses your own iCloud account, not ours
+      </div>
+      <div class="glance-item">
+        <svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5L7.5 14L16 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        No account, sign-up, or login required
+      </div>
+      <div class="glance-item">
+        <svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5L7.5 14L16 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        No analytics, ads, or third-party trackers
+      </div>
+      <div class="glance-item">
+        <svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5L7.5 14L16 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Camera, mic, and contacts stay on-device
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <h2>What Relyn stores</h2>
+    <p>
+      Every commitment you create &mdash; its title, notes, due date, priority,
+      and any contact you attach to it &mdash; is stored locally on your device.
+      None of it passes through a server we operate, because we don't operate one.
+    </p>
+    <p>
+      If you turn on iCloud sync in Settings, that same data is mirrored through
+      <strong>your personal iCloud account</strong> using Apple's key-value
+      storage, so it can appear on your other signed-in devices. That data is
+      governed by Apple's own privacy practices, encrypted in transit and at
+      rest by Apple, and never becomes visible to us at any point.
+    </p>
+  </section>
+
+  <section>
+    <h2>Camera &amp; business card scanning</h2>
+    <p>
+      When you scan a business card, Relyn uses Apple's on-device Vision
+      framework to read the text out of the photo you take. That processing
+      happens entirely on your phone. The photo itself is never saved to your
+      library, uploaded, or sent to us &mdash; it exists only for the moment it
+      takes to pull a name, phone number, or email out of it.
+    </p>
+  </section>
+
+  <section>
+    <h2>Microphone &amp; voice capture</h2>
+    <p>
+      Speaking a commitment instead of typing it uses Apple's on-device Speech
+      framework to turn your voice into text. That audio is processed locally
+      and is not retained or transmitted anywhere by Relyn.
+    </p>
+  </section>
+
+  <section>
+    <h2>Contacts</h2>
+    <p>
+      Attaching a contact to a commitment opens Apple's system contact picker.
+      Relyn only ever receives the single contact you explicitly choose &mdash;
+      it is never granted access to your full address book.
+    </p>
+  </section>
+
+  <section>
+    <h2>Notifications</h2>
+    <p>
+      Reminders are scheduled locally on your device using Apple's notification
+      system. No reminder content is sent through any external service to
+      deliver it.
+    </p>
+  </section>
+
+  <section>
+    <h2>Siri, widgets &amp; Apple Watch</h2>
+    <p>
+      Adding a commitment by voice through Siri, viewing one from the Home
+      Screen widget, or checking your list on Apple Watch all read from the
+      same on-device (and, if enabled, iCloud-synced) storage described above.
+      None of these surfaces introduce a new destination for your data.
+    </p>
+  </section>
+
+  <section>
+    <h2>What we don't do</h2>
+    <ul>
+      <li>We don't run analytics or crash-reporting SDKs that phone home with usage data.</li>
+      <li>We don't show ads or share information with advertising networks.</li>
+      <li>We don't require an account, email address, or sign-in of any kind.</li>
+      <li>We don't sell, rent, or otherwise share your information &mdash; there is nothing on our end to share.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Children's privacy</h2>
+    <p>
+      Relyn is not directed at children and does not knowingly collect
+      information from anyone, of any age &mdash; there is no collection
+      mechanism to begin with.
+    </p>
+  </section>
+
+  <section>
+    <h2>Changes to this policy</h2>
+    <p>
+      If this policy changes, the date at the top of this page will change
+      with it. Given how little Relyn does with data today, we don't expect
+      that to happen often.
+    </p>
+  </section>
+
+  <div class="contact">
+    <p><strong>Questions about this policy?</strong></p>
+    <p>Reach out at <a href="mailto:support@relynapp.com">support@relynapp.com</a></p>
+  </div>
+
+  <footer>
+    Relyn &middot; a personal commitment tracker
+  </footer>
+
+</div>
+</body>
+</html>
