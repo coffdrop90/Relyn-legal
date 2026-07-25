@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Relyn Support</title>
+<style>
+  :root {
+    --bg: #faf9fd;
+    --surface: #ffffff;
+    --surface-inset: #f3f2fa;
+    --ink: #14161f;
+    --ink-soft: #666f83;
+    --ink-faint: #9aa1b3;
+    --accent: #5e5ce6;
+    --accent-ink: #4740c9;
+    --accent-soft: #edecfb;
+    --line: #e6e5f1;
+    --good: #2f9e63;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0a0a0e;
+      --surface: #17171f;
+      --surface-inset: #1e1e29;
+      --ink: #edeef5;
+      --ink-soft: #a2a8bd;
+      --ink-faint: #6c7185;
+      --accent: #8583f2;
+      --accent-ink: #c3c2fb;
+      --accent-soft: rgba(94, 92, 230, 0.16);
+      --line: #2a2b38;
+      --good: #4cc98a;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 64px 24px 120px;
+  }
+
+  header.doc-head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 40px;
+  }
+
+  .mark {
+    width: 44px;
+    height: 44px;
+    border-radius: 13px;
+    flex: none;
+    background: linear-gradient(155deg, var(--accent) 0%, var(--accent-ink) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mark svg { width: 22px; height: 22px; }
+
+  .word {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+
+  .doc-label {
+    font-size: 13px;
+    color: var(--ink-soft);
+    font-weight: 600;
+  }
+
+  h1 {
+    font-size: clamp(32px, 5vw, 42px);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.08;
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+
+  .lede {
+    font-size: 17px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    margin: 0 0 40px;
+    max-width: 60ch;
+  }
+
+  .contact {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 26px 28px;
+    margin-bottom: 48px;
+  }
+
+  .contact p { margin: 0 0 6px; }
+  .contact a { color: var(--accent); font-weight: 600; text-decoration: none; }
+  .contact a:hover { text-decoration: underline; }
+  .contact .label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 12px;
+  }
+
+  .faq {
+    margin: 0 0 32px;
+  }
+
+  .faq summary {
+    font-size: 16.5px;
+    font-weight: 650;
+    padding: 18px 0;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--line);
+  }
+
+  .faq:last-of-type summary {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .faq summary::-webkit-details-marker { display: none; }
+
+  .faq summary::after {
+    content: "+";
+    color: var(--accent);
+    font-size: 20px;
+    font-weight: 400;
+    flex: none;
+    margin-left: 16px;
+    transition: transform 0.2s ease;
+  }
+
+  .faq[open] summary::after {
+    transform: rotate(45deg);
+  }
+
+  .faq p {
+    font-size: 15.5px;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    margin: 0 0 22px;
+    max-width: 62ch;
+  }
+
+  section h2 {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 0 0 4px;
+  }
+
+  footer {
+    margin-top: 40px;
+    font-size: 13px;
+    color: var(--ink-faint);
+  }
+
+  footer a {
+    color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <header class="doc-head">
+    <div class="mark">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5L9.5 17L19 6.5" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <div>
+      <div class="word">Relyn</div>
+      <div class="doc-label">Support</div>
+    </div>
+  </header>
+
+  <h1>Need a hand with Relyn?</h1>
+  <p class="lede">
+    Answers to the most common questions below, or reach out directly
+    and we'll get back to you.
+  </p>
+
+  <div class="contact">
+    <p class="label">Contact</p>
+    <p>Email <a href="mailto:595triumph@gmail.com">595triumph@gmail.com</a> — we read every message and typically reply within a day or two.</p>
+  </div>
+
+  <section>
+
+    <details class="faq" open>
+      <summary>How do I add a commitment?</summary>
+      <p>
+        Tap the <strong>+</strong> button on any screen and either type it out
+        or speak it using Smart Capture — say something like "call Jason
+        tomorrow about pricing" and Relyn will pull out the category,
+        priority, due date, and contact automatically. You can also say
+        "Hey Siri, add a commitment to Relyn" without opening the app at all.
+      </p>
+    </details>
+
+    <details class="faq">
+      <summary>Does Relyn sync across my devices?</summary>
+      <p>
+        Yes. Turn on iCloud sync from <strong>More → Preferences</strong>, and
+        your commitments will mirror across every device signed into the same
+        Apple ID, including the Apple Watch app. Sync happens through your own
+        iCloud account — Relyn's makers never see or store that data.
+      </p>
+    </details>
+
+    <details class="faq">
+      <summary>I'm not getting reminder notifications.</summary>
+      <p>
+        Check <strong>Settings → Notifications → Relyn</strong> on your iPhone
+        and make sure Allow Notifications is turned on. If you dismissed the
+        permission prompt on first launch, this is the only way to re-enable
+        it — Relyn can't re-ask for you.
+      </p>
+    </details>
+
+    <details class="faq">
+      <summary>How do recurring commitments work?</summary>
+      <p>
+        When adding or editing a commitment, set a Repeat interval (Daily,
+        Weekly, Every 2 Weeks, or Monthly). Completing it automatically
+        creates the next occurrence with the due date moved forward — you
+        never have to re-enter a recurring task by hand.
+      </p>
+    </details>
+
+    <details class="faq">
+      <summary>What does the Home Screen widget show?</summary>
+      <p>
+        Your next due commitment along with how many are active and overdue.
+        It updates automatically whenever you add, complete, or change
+        something in the app — no manual refresh needed.
+      </p>
+    </details>
+
+    <details class="faq">
+      <summary>Is my data private?</summary>
+      <p>
+        Yes — Relyn collects nothing and makes no network calls of its own.
+        Full details are in the <a href="./">Privacy Policy</a>.
+      </p>
+    </details>
+
+  </section>
+
+  <footer>
+    Relyn · a personal commitment tracker · <a href="./">Privacy Policy</a>
+  </footer>
+
+</div>
+</body>
+</html>
